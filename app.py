@@ -91,7 +91,7 @@ def load_components_data():
         ('I2C', 1500, 95, 'i2c.png'),
         ('Streamlit', 1000, 95, 'streamlit.png'),
         ('HTML+CSS', 800, 95, 'html.png'),
-        ('PySerial', 500, 95, 'PySerial.png'),
+        ('PySerial', 500, 95, 'pyserial.png'),
         ('Other Libraries', 2500, 50, 'libraries.png')
     ]
     
