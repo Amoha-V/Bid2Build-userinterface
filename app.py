@@ -205,7 +205,6 @@ def main():
                     <h3 style="margin-top:10px; color: #2c3e50;">{row['Component Name']}</h3>
                     <p style="color: #7f8c8d;"><strong>Category:</strong> {row['Category']}</p>
                     <p style="color: #27ae60;"><strong>Base Price:</strong> ₹ {row['Base Price']}</p>
-                    <p style="color: #3498db;"><strong>Points:</strong> {row['Points']}</p>
                 </div>
                 """, unsafe_allow_html=True)
 
