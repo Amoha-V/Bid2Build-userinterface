@@ -40,24 +40,25 @@ def load_components_data():
         components_data['Image'].append(image_path)
     
     # Microcontrollers
-    add_component('Microcontrollers', 'Arduino UNO', 2000, 100, 4, 'arduino_uno.png')
-    add_component('Microcontrollers', 'ESP32', 1100, 150, 2, 'esp32.png')
-    
+    add_component('Microcontrollers', 'Arduino UNO(Real)', 2200, 100, 4, 'arduino_uno.png')
+    add_component('Microcontrollers', 'ESP32(Real)', 3000, 150, 2, 'esp32.png')
+    add_component('Microcontrollers', 'Raspberry Pi(Real)', 4000, 150, 2, 'raspberrypi.png')
+    add_component('Microcontrollers', 'Arduino UNO(Virtual)', 800, 100, 4, 'arduino_uno.png')
+    add_component('Microcontrollers', 'ESP32(Virtual)', 1600, 150, 2, 'esp32.png')
     # Sensors
     sensor_data = [
-        ('HC-SR04', 100, 60, 'hc_sr04.png'),
-        ('MQ3', 200, 60, 'mq3.jpg'),
-        ('DHT11', 150, 55, 'dht11.jpg'),
-        ('Gyro Sensor', 220, 70, 'gyro_sensor.jpg'),
-        ('IR Sensors', 20, 55, 'ir_sensor.jpeg'),
-        ('Soil Moisture Sensor', 100, 55, 'soil_moisture_sensor.jpg'),
-        ('Pressure Sensor', 180, 80, 'pressure_sensor.jpg'),
-        ('PIR Sensor', 200, 50, 'pir_sensor.jpg'),
-        ('Photo Resistance', 50, 60, 'photo_resistance.jpg'),
-        ('Metal Touch', 140, 85, 'metal_touch.jpg'),
-        ('Flame Sensor', 150, 65, 'flame_sensor.jpg'),
-        ('Vibration Sensor', 180, 70, 'vibration_sensor.jpg'),
-        ('Rotatory Encoders', 70, 75, 'rotatory_encoder.jpg')
+        ('HC-SR04', 400, 60, 'hc_sr04.png'),
+        ('MQ3', 800, 60, 'mq3.jpg'),
+        ('DHT11', 600, 55, 'dht11.jpg'),
+        ('Gyro Sensor', 880, 70, 'gyro_sensor.jpg'),
+        ('IR Sensors', 120, 55, 'ir_sensor.jpeg'),
+        ('Soil Moisture Sensor', 400, 55, 'soil_moisture_sensor.jpg'),
+        ('Force Sensor', 720, 80, 'pressure_sensor.jpg'),
+        ('PIR Sensor', 800, 50, 'pir_sensor.jpg'),
+        ('Photo Resistance', 200, 60, 'photo_resistance.jpg'),
+        ('Metal Touch', 560, 85, 'metal_touch.jpg'),
+        ('Flame Sensor', 600, 65, 'flame_sensor.jpg'),
+        ('Vibration Sensor', 720, 70, 'vibration_sensor.jpg'),
     ]
     
     for name, price, points, image in sensor_data:
@@ -65,14 +66,14 @@ def load_components_data():
     
     # Actuators
     actuator_data = [
-        ('Servo Discrete', 150, 100, 'servo_discrete.png'),
-        ('Push Buttons', 10, 10, 'push_buttons.jpg'),
-        ('DC Motors', 100, 70, 'dc_motors.jpg'),
-        ('Motor Shield', 350, 60, 'motor_shield.jpg'),
-        ('RGB', 190, 35, 'rgb.jpg'),
-        ('LCD Display', 320, 100, 'lcd_display.jpg'),
-        ('LED', 1, 10, 'led.jpg'),
-        ('Buzzer', 20, 10, 'buzzer.jpg')
+        ('Servo Motor', 600, 100, 'servo_discrete.png'),
+        ('Push Buttons', 40, 10, 'push_buttons.jpg'),
+        ('DC Motors', 400, 70, 'dc_motors.jpg'),
+        ('Motor Shield', 1400, 60, 'motor_shield.jpg'),
+        ('RGB', 380, 35, 'rgb.jpg'),
+        ('LCD Display', 1280, 100, 'lcd_display.jpg'),
+        ('LED', 40, 3, 'led.jpg'),
+        ('Buzzer', 80, 10, 'buzzer.jpg')
     ]
     
     for name, price, points, image in actuator_data:
@@ -80,16 +81,18 @@ def load_components_data():
     
     # Software
     software_data = [
-        ('Python 311', 1250, 75, 'python_logo.png'),
+        ('Python 311', 1500, 75, 'python_logo.png'),
         ('Embedded C', 1200, 60, 'embedded_c.png'),
         ('Arduino IDE', 2500, 55, 'arduino_ide.png'),
-        ('Node.js', 1000, 100, 'nodejs.png'),
-        ('Tinker CAD', 2600, 50, 'tinkercad.png'),
-        ('Adafruit Library', 500, 75, 'adafruit.png'),
+        ('Flask/fastAPI', 1000, 55, 'flask.png'),
+        ('Tinker CAD/WOKWI', 2600, 50, 'tinkercad.png'),
+        ('Adafruit Libraries', 1500, 75, 'adafruit.png'),
         ('NewPing', 1250, 75, 'newping.png'),
-        ('Encoder', 750, 100, 'encoder.png'),
         ('I2C', 1500, 95, 'i2c.png'),
-        ('Other Libraries', 1800, 50, 'libraries.png')
+        ('Streamlit', 1000, 95, 'streamlit.png'),
+        ('HTML+CSS', 800, 95, 'html.png'),
+        ('PySerial', 500, 95, 'PySerial.png'),
+        ('Other Libraries', 2500, 50, 'libraries.png')
     ]
     
     for name, price, points, image in software_data:
